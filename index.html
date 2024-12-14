@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GSM & Weight Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav>
+        <ul>
+            <li><a href="#" id="weightToGsmTab">Weight to GSM</a></li>
+            <li><a href="#" id="gsmToWeightTab">GSM to Weight</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main content -->
+    <div class="container">
+        <h1>GSM & Weight Calculator</h1>
+        <!-- Weight to GSM Form -->
+        <div id="weightToGsmForm" class="form-container">
+            <h2>Weight to GSM</h2>
+            <form id="weightToGsm">
+                <label for="width">Width (cm):</label>
+                <input type="number" id="width" placeholder="Enter width in cm" required>
+
+                <label for="height">Height (cm):</label>
+                <input type="number" id="height" placeholder="Enter height in cm" required>
+
+                <label for="weight">Weight (g):</label>
+                <input type="number" id="weight" placeholder="Enter weight in grams" required>
+
+                <button type="submit">Calculate GSM</button>
+            </form>
+            <div id="weightToGsmResult" class="result"></div>
+        </div>
+
+        <!-- GSM to Weight Form -->
+        <div id="gsmToWeightForm" class="form-container" style="display: none;">
+            <h2>GSM to Weight</h2>
+            <form id="gsmToWeight">
+                <label for="gsm">GSM:</label>
+                <input type="number" id="gsmInput" placeholder="Enter GSM" required>
+
+                <label for="widthGsm">Width (cm):</label>
+                <input type="number" id="widthGsm" placeholder="Enter width in cm" required>
+
+                <label for="heightGsm">Height (cm):</label>
+                <input type="number" id="heightGsm" placeholder="Enter height in cm" required>
+
+                <button type="submit">Calculate Weight</button>
+            </form>
+            <div id="gsmToWeightResult" class="result"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
